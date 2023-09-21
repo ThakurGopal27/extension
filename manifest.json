@@ -1,0 +1,17 @@
+{
+    "name": "Autofill Details Extension",
+    "version": "1.0",
+    "description": "This extension autofills details on web pages.",
+    "manifest_version": 3,
+    "content_scripts": [
+      {
+        "matches": ["*://*/*"],
+        "js": ["contentscript.js"]
+      }
+    ],
+    "permissions": [
+      "activeTab",
+      "storage"
+    ]
+  }
+  
